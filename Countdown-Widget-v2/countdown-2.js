@@ -1,9 +1,13 @@
 $(document).ready(function() {
-    var countS = 15;
+    let defaultButton = $("#quickSet15").addClass("btn-clicked");
+    let countS = defaultButton.text();
+
     $("#session").html(countS);
+
     var countB = 5;
     $("#break").html(countB);
     var pos = "Session";
+
     var countLama;
     var posLama;
     var count;
