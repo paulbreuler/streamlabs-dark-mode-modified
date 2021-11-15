@@ -22,14 +22,22 @@ p {
     margin: 4em auto 0em;
     display: flex;
     justify-content: center;
+    font-weight: bold;
 }
 
+
+/*Minutes / Seconds Labels*/
+
 .flip-clock-divider .flip-clock-label {
-    color: #fff;
+    color: #80F5D2;
     font-family: Nunito;
     font-size: 2em;
     text-align: center;
     align-items: center;
+}
+
+.flip-clock-divider .flip-clock-dot {
+    background-color: #80F5D2 !important;
 }
 
 .flip-clock-divider.minutes .flip-clock-label {
@@ -38,11 +46,6 @@ p {
 
 .flip-clock-divider.seconds .flip-clock-label {
     right: -110px;
-}
-
-.btn-clicked {
-    background-color: #CCCCCC !important;
-    color: #333333 !important;
 }
 
 .col-md-4 {
@@ -88,13 +91,43 @@ p {
     margin-right: 10px;
 }
 
-.btn {
-    background-color: #333333;
-    color: #CCCCCC;
+@media only screen and (min-width: 992px) {
+    .quickSetButtons {
+        right: -135px;
+    }
+}
+
+.btn-default {
+    background-color: #17242dff;
+    color: #128079;
+    font-weight: 600;
+    border-color: #0b4945;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.btn:hover {
+    background-color: #17242dff;
+    color: #80F5D2
+}
+
+.btn:active {
+    background-color: #80F5D2 !important;
+    color: #17242dff !important;
+}
+
+.btn:focus {
+    background-color: #128079;
+    color: #80F5D2;
+}
+
+.btn-clicked {
+    background-color: #128079;
+    color: #80F5D2;
 }
 
 .text-color {
-    color: #CCCCCC;
+    background-color: #3e8e41;
+    color: #333fff33;
     font-family: Nunito;
 }
 
@@ -119,4 +152,19 @@ p {
     display: flex;
     justify-content: center;
     margin-bottom: 20px;
+}
+
+
+/* .flip-clock-wrapper ul li a div div.inn */
+
+.flip-clock-wrapper ul.flip:nth-child(2) li a div div.inn,
+.flip-clock-wrapper ul.flip:nth-child(3) li a div div.inn {
+    background-color: #17242dff;
+    color: #80F5D2;
+}
+
+.flip-clock-wrapper ul.flip:nth-child(5) li a div div.inn,
+.flip-clock-wrapper ul.flip:nth-child(6) li a div div.inn {
+    background-color: #17242dff;
+    color: #80F5D2;
 }
