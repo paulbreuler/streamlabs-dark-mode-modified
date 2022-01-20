@@ -28,6 +28,7 @@ p {
 
 /*Minutes / Seconds Labels*/
 
+.flip-clock-minutes-label,
 .flip-clock-divider .flip-clock-label {
     color: #80F5D2;
     font-family: Nunito;
